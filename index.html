@@ -56,6 +56,41 @@
           </div>
         </div>
       </section>
+
+      <section id="sugestao">
+        <h2>Sugira sua Pizza</h2>
+        <form class="sugestao-form">
+            <div class="form-group">
+                <label>Tipo de Pizza:</label>
+                <div class="option-group">
+                    <label><input type="radio" name="tipo" value="doce"> Doce</label>
+                    <label><input type="radio" name="tipo" value="salgada"> Salgada</label>
+                </div>
+            </div>
+    
+            <div class="form-group">
+                <label for="descricao">Descrição:</label>
+                <textarea id="descricao" name="descricao" rows="4" placeholder="Descreva sua pizza..."></textarea>
+            </div>
+    
+            <div class="form-group">
+                <label>Ingredientes obrigatórios:</label>
+                <div class="option-group">
+                    <label><input type="checkbox" name="ingredientes" value="queijo"> Queijo</label>
+                    <label><input type="checkbox" name="ingredientes" value="tomate"> Tomate</label>
+                    <label><input type="checkbox" name="ingredientes" value="manjericao"> Manjericão</label>
+                </div>
+            </div>
+    
+            <div class="form-group">
+                <label for="preco">Sugira um valor (R$):</label>
+                <input type="number" id="preco" name="preco" step="0.01" placeholder="Ex: 45.00">
+            </div>
+    
+            <button type="submit" class="btn-azul">Enviar Sugestão</button>
+        </form>
+    </section>
+    
     
     <section id="sobre">
         <h4>Sobre Nós</h4>
@@ -75,6 +110,7 @@
             Segunda a Sábado: 11h00 às 23h00<br>
             Domingo: 16h00 às 23h00</p>
       </div>
+    
 
     <footer>
         <p>© 2024 Alessio's Pizzaria</p>
